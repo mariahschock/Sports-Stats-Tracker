@@ -44,9 +44,10 @@ form.addEventListener('submit', (e) => {
     };
 
     stats.push(stat);
-    console.log('list of stats', stats);
+    console.log('list of stats', stat);
 
-    renderStats;
+    stat = [];
+    renderStats();
 
     form.reset();
 
@@ -57,6 +58,7 @@ form.addEventListener('submit', (e) => {
 });
 
 remove.addEventListener('click', () => {
+    
     // Step 2 -- add code to allow users to remove the most recent stat
     // Hint -- how do you remove an element from an array?
     // Hint -- how can we rerender the stats using a function above?
